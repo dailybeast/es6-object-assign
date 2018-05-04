@@ -1,12 +1,11 @@
 /**
  * Code refactored from Mozilla Developer Network:
- *
+ * Made into IIFE to support external usage of Object.assign
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
  */
 
-'use strict';
-
 (function () {
+  'use strict';
   if (!Object.assign) {
     Object.defineProperty(Object, 'assign', {
       enumerable: false,
